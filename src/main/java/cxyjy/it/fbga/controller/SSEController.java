@@ -53,7 +53,7 @@ public class SSEController {
     var request = new Request.Builder().url("https://gpt.kattgatt.com/chat/sse")
             .addHeader("X-Request-AppId", appId)
             .addHeader("X-Request-Timestamp", timestamp)
-            .addHeader("X-Request-Signature", hmacMd5(toEncrypt, "A3b7H2p9"))
+            .addHeader("X-Request-Signature", hmacMd5(toEncrypt, "xxx"))
             .post(okhttp3.RequestBody.create(message, okhttp3.MediaType.get("application/json"))).build();
 
     // 实例化EventSource，注册EventSource监听器
