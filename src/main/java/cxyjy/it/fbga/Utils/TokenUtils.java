@@ -20,7 +20,7 @@ public class TokenUtils {
     final static Logger log = LoggerFactory.getLogger(TokenUtils.class);
     public static  String generrateTocken() {
 
-        String apiKey = "e42278b7b01274f9d7fa9d278dcf01fa.Kc4MVwly7sEjTUQ6";
+        String apiKey = "";
         String[] split = apiKey.split("\\.");
         String id = split[0];
         String secret = split[1];
